@@ -1,0 +1,75 @@
+.dsc-footer {
+  background: var(--dsc-color-bg-highlight-5);
+  padding: var(--dsc-spacing-small) var(--dsc-spacing-medium) var(--dsc-spacing-small) var(--dsc-spacing-medium);
+  display: flex;
+  flex-direction: column;
+  gap: var(--dsc-spacing-small);
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.system-infos {
+  display: flex;
+  flex-direction: row;
+  gap: var(--dsc-spacing-tiny);
+  row-gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.infos {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  flex: 1;
+  min-width: 380px;
+  position: relative;
+}
+.sigla2 {
+  color: var(--dsc-color-content-neutral-1);
+  text-align: left;
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: var(--dsc-font-weight-600);
+  position: relative;
+}
+.text {
+  color: var(--dsc-color-content-neutral-1);
+  text-align: left;
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: var(--dsc-font-weight-400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.vers-o-1-000-0 {
+  color: var(--dsc-color-content-neutral-1);
+  text-align: right;
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: var(--dsc-font-weight-600);
+  position: relative;
+  min-width: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

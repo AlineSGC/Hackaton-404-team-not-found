@@ -1,0 +1,12 @@
+<div class="card-rotina" (click)="onCardClick()" [class.has-link]="rotina.link">
+  <div class="frame-46">
+    <div class="icon-container">
+      <img class="icon-img" [src]="'/assets/' + rotina.icone" />
+    </div>
+    <div class="info-container">
+      <div class="titulo">{{ rotina.titulo }}</div>
+      <div class="descricao">{{ rotina.descricao }}</div>
+    </div>
+  </div>
+  <div class="arrow">›</div>
+</div>

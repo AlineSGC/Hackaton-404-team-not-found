@@ -1,0 +1,127 @@
+.tela-principal-desktop {
+  background: var(--dsc-color-bg-neutral-1);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+.page {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  overflow: hidden;
+}
+.frame-66 {
+  background: var(--dsc-color-bg-neutral-1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-right: 1px solid var(--dsc-color-border-neutral-4);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+}
+.main-column {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1;
+}
+.rotinas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.titulo-pagina {
+  color: var(--dsc-color-content-neutral-5);
+  font-family: var(--font-family-base);
+  font-size: 20px;
+  font-weight: var(--dsc-font-weight-600);
+}
+.table-plan-1 {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.table-header-component {
+  background: #f4f4f4;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: row;
+}
+.table-header-cell {
+  border-right: 1px solid #e0e0e0;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+.table-header-cell:last-child {
+  border-right: none;
+}
+.header-text {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.table-row-instance {
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: row;
+  min-height: 56px;
+}
+.table-row-instance:last-child {
+  border-bottom: none;
+}
+.table-cell {
+  border-right: 1px solid #e0e0e0;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+.table-cell:last-child {
+  border-right: none;
+}
+.icone-col {
+  width: 80px;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.nome-col {
+  width: 220px;
+  flex-shrink: 0;
+}
+.desc-col {
+  flex: 1;
+}
+.icon-circle {
+  background: #e0edfc;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-img {
+  width: 20px;
+  height: 20px;
+}
+.cell-text {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+.cell-text.bold {
+  font-weight: 600;
+}

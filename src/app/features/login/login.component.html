@@ -1,0 +1,69 @@
+<div class="login">
+  <div class="login2">
+    <img class="close-up-de-familia" src="/assets/close-up-de-familia-feliz-passando-um-tempo-juntos-10.png" />
+    <div class="frame"></div>
+    <div class="login-sso">
+      <form class="frame2" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="frame3">
+          <div class="caixa-seguridade">
+            <img class="caixa-logo" src="/assets/caixa-seguridade-vol-hor-positiva-10.png" />
+          </div>
+          <div class="entre-com-seu-login">
+            Entre com seu login e senha para acessar sua área pessoal.
+          </div>
+        </div>
+        
+        <div class="dsc-input">
+          <div class="label-line">
+            <div class="label-additional-info">
+              <div class="label2">
+                <div class="label-standard">Usuário</div>
+              </div>
+            </div>
+          </div>
+          <div class="box" [class.error-box]="loginForm.get('usuario')?.invalid && loginForm.get('usuario')?.touched">
+            <div class="left-icon">
+              <img class="person" src="/assets/person0.svg" />
+            </div>
+            <input type="text" formControlName="usuario" class="input-field" placeholder="Ex: C000000" />
+          </div>
+          <div class="error-msg" *ngIf="loginForm.get('usuario')?.invalid && loginForm.get('usuario')?.touched">
+            Campo obrigatório
+          </div>
+        </div>
+
+        <div class="dsc-input">
+          <div class="label-line">
+            <div class="label-additional-info">
+              <div class="label2">
+                <div class="label-standard">Senha</div>
+              </div>
+            </div>
+          </div>
+          <div class="box" [class.error-box]="loginForm.get('senha')?.invalid && loginForm.get('senha')?.touched">
+            <div class="left-icon">
+              <img class="lock" src="/assets/lock0.svg" />
+            </div>
+            <input [type]="showPassword ? 'text' : 'password'" formControlName="senha" class="input-field" placeholder="Sua senha" />
+            <div class="dsc-input-actions" (click)="togglePasswordVisibility()">
+              <img class="visibility" src="/assets/visibility0.svg" />
+            </div>
+          </div>
+          <div class="error-msg" *ngIf="loginForm.get('senha')?.invalid && loginForm.get('senha')?.touched">
+            Campo obrigatório
+          </div>
+        </div>
+
+        <div class="error-msg global-error" *ngIf="error">
+          {{ error }}
+        </div>
+
+        <div class="frame4">
+          <button type="submit" class="dsc-button" [disabled]="loading">
+            <div class="label3">{{ loading ? 'Entrando...' : 'Entrar' }}</div>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  /* Colors */
+  --dsc-color-bg-highlight-5: #005ca9;
+  --dsc-color-bg-highlight-6: #00437a;
+  --dsc-color-content-neutral-1: #ffffff;
+  --dsc-color-bg-neutral-4: #d0e0e3;
+  --dsc-color-bg-neutral-2: #f7fafa;
+  --dsc-color-content-neutral-5: #22292e;
+  --dsc-color-bg-neutral-1: #ffffff;
+  --dsc-color-border-neutral-4: #9eb2b8;
+  --dsc-color-content-neutral-3: #64747a;
+  --dsc-color-bg-accent-5: #d87b00;
+
+  /* Spacing */
+  --dsc-spacing-none: 0px;
+  --dsc-spacing-quark: 4px;
+  --dsc-spacing-nano: 8px;
+  --dsc-spacing-tiny: 16px;
+  --dsc-spacing-smaller: 24px;
+  --dsc-spacing-small: 32px;
+  --dsc-spacing-medium: 40px;
+
+  /* Borders & Sizes */
+  --dsc-border-radius-small: 8px;
+  --dsc-border-radius-nano: 4px;
+  --dsc-icon-size-medium: 24px;
+  --dsc-input-height-size-standard: 40px;
+  --button-height-size-standard: 40px;
+
+  /* Typography */
+  --font-family-base: 'Inter', sans-serif;
+  --dsc-font-weight-400: 400;
+  --dsc-font-weight-600: 600;
+  --dsc-font-size-micro: 16px;
+  --dsc-font-size-tiny: 18px;
+  
+  /* Box Shadow */
+  --m3-elevation-5-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-base);
+  background-color: #f6f9f9;
+  color: var(--dsc-color-content-neutral-5);
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}

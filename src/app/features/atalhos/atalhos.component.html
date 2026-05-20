@@ -1,0 +1,45 @@
+<div class="tela-principal-desktop">
+  <app-header></app-header>
+  <div class="page">
+    <div class="frame-66">
+      <app-side-menu></app-side-menu>
+    </div>
+    <div class="content">
+      <div class="main-column">
+        
+        <div class="atalhos-header">
+          <div class="titulo-pagina">Todos os Atalhos</div>
+          <div class="dsc-button">
+            <div class="label-button">Acrescentar novo atalho</div>
+          </div>
+        </div>
+
+        <div class="table-plan-1">
+          <div class="table-header-component">
+            <div class="table-header-cell-nome"><div class="nome">Nome</div></div>
+            <div class="table-header-cell-endere-o-url"><div class="endere-o-url">Endereço (URL)</div></div>
+            <div class="table-header-cell-fixado"><div class="fixado">Fixado</div></div>
+            <div class="table-header-cell-observa-es"><div class="observa-es">Observações</div></div>
+            <div class="table-header-cell-excluir"><div class="excluir">Excluir</div></div>
+          </div>
+          
+          <div class="table-row-instance" *ngFor="let atalho of atalhos()">
+            <div class="table-cell-nome"><div class="nome2">{{ atalho.nome }}</div></div>
+            <div class="table-cell-endere-o-url">
+              <a class="endere-o-url2" [href]="atalho.url" target="_blank">{{ atalho.url }}</a>
+            </div>
+            <div class="table-cell-fixado" (click)="togglePin(atalho.id)">
+              <div class="fixado2 cursor-pointer">{{ atalho.fixado ? '📌' : '📍' }}</div>
+            </div>
+            <div class="table-cell-observa-es"><div class="observa-es2">{{ atalho.observacoes }}</div></div>
+            <div class="table-cell-excluir" (click)="deleteAtalho(atalho.id)">
+              <div class="excluir2 cursor-pointer">🗑️</div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>

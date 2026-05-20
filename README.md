@@ -1,27 +1,43 @@
-# SicasHub
+📋 Resumo do Projeto
+Este é um projeto Angular chamado SicasHub - uma aplicação web para o Hackaton Caixa da equipe 404. A composição é:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+CSS: 43.6%
+TypeScript: 36.8%
+HTML: 19.6%
 
-## Development server
+🔧 Como rodar o projeto
+Rodar no terminal:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+bash
+# 1. Clonar o repositório
+git clone https://github.com/AlineSGC/Hackaton-404-team-not-found.git
 
-## Code scaffolding
+# 2. Entrar na pasta do projeto
+cd Hackaton-404-team-not-found
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# 3. Instalar as dependências
+npm install
 
-## Build
+# 4. Rodar o servidor de desenvolvimento
+npm start
+Depois que executar npm start, a aplicação estará disponível em http://localhost:4200/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+📚 Comandos úteis do projeto
+bash
+npm start          # Inicia servidor de desenvolvimento
+npm run build      # Compila o projeto para produção (gera pasta dist/)
+npm run watch      # Compila em modo watch
+npm test           # Executa testes unitários
 
-## Running unit tests
+🛠️ Tecnologias utilizadas
+Angular 18.2 - Framework web
+TypeScript - Linguagem principal
+RxJS - Reatividade e assincronismo
+Karma & Jasmine - Testes
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+⚠️ Pré-requisitos
+Precisa ter instalado:
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Node.js (versão 18+)
+npm (vem com Node.js)
+Angular CLI (instalará automaticamente com npm install)
